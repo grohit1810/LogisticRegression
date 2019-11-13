@@ -112,7 +112,7 @@ class LogisticRegression(object):
                 count+=1
                 self.predictions.append([prediction,y_test[i]])
         
-        if write_predictions_to_file == 1 and filename != None:
+        if write_predictions_to_file and filename != None:
             self.write_predictions_to_file(filename)
         
         return count/len(X_test)

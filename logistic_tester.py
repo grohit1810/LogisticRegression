@@ -76,7 +76,7 @@ def MyLogRegTester(data,num_iters = 10):
         classifier.train()
         #classifier.plot_cost_function()
         if not file_exception :
-            acc = classifier.calculate_accuracy(X_test,y_test,write_predictions_to_file = 1,filename = filename)
+            acc = classifier.calculate_accuracy(X_test,y_test,write_predictions_to_file = True,filename = filename)
         else:
             acc = classifier.calculate_accuracy(X_test,y_test)
         print("Accuracy of trial ",i+1," : ",acc)
